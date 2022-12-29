@@ -1,20 +1,45 @@
-
-
-
-const AboutUsPage = () =>{
-    return<div>
-        
-        <h1> About us Page </h1>
+const AboutUsPage = () => {
+    return (
+      <div>
+        <h1> About us Page</h1>
         <p>
-        The About Us page of your website is an essential source of information 
-        for all who want to know more about your business.
-        About Us pages are where you showcase your history, 
-        what is unique about your work, your company’s values, and who you serve.
-        The design, written content, and visual or video elements
-        together tell an important story about who you are and why you do it.
-        How can you make the most of this integral part of your marketing strategy?
-        In this article, you’ll learn what makes an exceptional About Us page and find 25 about us page examples of the best ones out there to inspire your own About Us page design and content.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        </div>
-}
-export default AboutUsPage;
+        <h2>Dlor in reprehenderit </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <ul className="about_us_list">
+          <li>
+            <h3>Dlor in reprehenderit </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in
+            </p>
+          </li>
+          <li>
+            <h3>Sed do eiusmod tempor </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in
+            </p>
+          </li>
+        </ul>
+      </div>
+    );
+  };
+  
+  export default AboutUsPage;
+  
