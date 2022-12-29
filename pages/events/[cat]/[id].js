@@ -18,18 +18,19 @@ export default EventPage;
 // burada event idleri lazım bize
 /*all event alıcaz ozmaan
 
-*/
+ neden static path sectik ? */
 export async function getStaticPaths() {
-  // neden statik paths
-  const data = await import("/data/data.json");
-  const allEvents = data;
+  const data = await import('/data/data.json');
+  const allEvents = data.allEvents;
 
   const allPaths = allEvents.map((path) => {
     return {
       params: {
-        cat: path.city, // bu biizm category identifier
-        // burdaki id dosyanın adından geliyor [id].js köşeli parantez içi neyse ordan gelicek
+        cat: path.city,
         id: path.id,
+        // bu biizm category identifier
+        // burdaki id dosyanın adından geliyor 
+        //[id].js köşeli parantez içi neyse ordan gelicek
       },
     };
   });

@@ -18,11 +18,11 @@ const EventsCatPage = ({ data, pageName }) => {
             // bunu yapan <Link></Link>
 
             <Link key={ev.id} href={`/events/${ev.city}/${ev.id}`} passHref>
-              <a>
+              
                 <Image width={200} height={300} alt={ev.title} src={ev.image} />
                 <h2>{ev.title}</h2>
                 <p>{ev.description}</p>
-              </a>
+              
             </Link>
           )
         )}
@@ -51,9 +51,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   console.log(context);
-  const id = context?.params.cat; //id yi alıyor şuan içinde bulunduğun sayfanın
-  const { allEvents } = await import("data/data.json");
+  const id = context?.params.cat; 
+  //id yi alıyor şuan içinde bulunduğun sayfanın
+  const { allEvents } = await import('/data/data.json');
   const data = allEvents.filter((ev) => ev.city === id);
   console.log(data);
-  return { props: { data, pageName: id } }; // ilk data:data yazmıştı sonra sildi
+  return { props: { data, pageName: id } }; 
+  // ilk data:data yazmıştı sonra sildi
 }
