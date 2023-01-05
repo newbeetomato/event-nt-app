@@ -1,10 +1,7 @@
-import Head from 'next/head'
+import Head from "next/head";
+import { HomePage } from "../src/components/home/home-page";
 
-import { HomePage } from '../src/components/home/home-page';
-
-
-
-export default function Home({data} ) {
+export default function Home({ data }) {
   return (
     <div>
       <Head>
@@ -18,10 +15,10 @@ export default function Home({data} ) {
 }
 
 export async function getServerSideProps() {
-  const { events_categories } = await import('../data/data.json');
+  const { events_categories } = await import("../data/data.json");
   return {
     props: {
-      data: events_categories
+      data: events_categories,
     },
   };
 }

@@ -1,17 +1,11 @@
-import path from "path";
-import Image from "next/image";
+
+import SingleEvent from '../../../src/components/events/single-event';
+
 
 // burası single event pagelerimiz
-const EventPage = (data) => { // aşşağıdaki eşitlediğimiz data yı
-  // buraya gönderiyoruz önce aşşağısı çalılıyore çünkü
-  return <div>
-    <Image src={data.image} width={1000} height={500} alt={data.title}/>
-    <h1>
-      {data.title}
-    </h1>
-    <p> {data.description}</p>
-  </div>
-};
+const EventPage = ({ data }) => <SingleEvent data={data} />; 
+// önce async çalışır aşşağıdaki data buraya geliyor 
+  
 export default EventPage;
 
 // ilk standalone fonksiyonu
